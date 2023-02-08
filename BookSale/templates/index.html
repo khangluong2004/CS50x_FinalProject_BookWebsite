@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <p style = "text-align: center;"> Negative ForSale = -1 * Amount Owned</p>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>BookName</th>
+                <th>Price</th>
+                <th>ForSale</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td> CASH </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{cash}}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {%for i in own%}
+                <tr>
+                {%for x in i%}
+                    <td> {{x}} </td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+{% endblock %}

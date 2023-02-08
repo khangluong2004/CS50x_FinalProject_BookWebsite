@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    {%for i in l%}
+        {%for x in i%}
+            <p style = "text-align: center;"> {{x}} </p>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}

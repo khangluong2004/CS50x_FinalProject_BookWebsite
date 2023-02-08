@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+
+{%block title%}
+    History
+{%endblock%}
+
+{%block main%}
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Amount</th>
+                <th>Sell/Sold/Buy</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in record%}
+                <tr>
+                    {%for x in i%}
+                        <td> {{x}} </td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+{%endblock%}
