@@ -2,6 +2,10 @@
 ### Purpose: Create an online platform for book transactions between real users.
 ### Video link: https://www.youtube.com/watch?v=pKhviKseGfk&ab_channel=8899_L%C6%B0%C6%A1ngAnKhang
 
+### Tools:
+1. Flask
+2. SQLite
+   
 ### Features:
 - Database used: booksale database:
 1. users TABLE (id, username, hash, cash): Used to store login details and basic info (cash) of users.
